@@ -149,9 +149,6 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Store>
-                    <Dash/>
-                </Store>
                 <MyModal onClose={() => this.closeModal()} open={this.state.visible}>
                     <MyPaper>
                         <TextField
