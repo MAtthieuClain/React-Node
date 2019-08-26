@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { Modal,  Checkbox, TextField, List, ListItem, ListItemText, Button, styled, Paper, FormControlLabel } from '@material-ui/core';
-//import logo from './logo.svg';
 import './App.css';
-import Dash from './Dash';
-import Store from './Store';
+
 const MyModal = styled(Modal)({
     display: 'flex',
     alignItems: 'center',
