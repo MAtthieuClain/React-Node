@@ -75,14 +75,10 @@ app.delete('/delete/:id', function (req, res) {
 })
 
 io.on('connection', function(socket){
-    console.log("a user connected");
     socket.on('list product', function(msg){
-        console.log('message: ' + JSON.stringify(msg))
         io.emit('list product', listProduct)
     })
 })
 
-// Démarrer le serveur
 http.listen(port, hostname, function(){
-	console.log("Mon serveur fonctionne sur http://"+ hostname +":"+port+"\n");
 });
